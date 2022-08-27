@@ -64,5 +64,20 @@ public class ManagerTest {
 
         assertEquals(expected, actual);
     }
+    @Test
+    public void shouldDoIfPartMatchInName() {
 
+        boolean expected = true;
+        boolean actual = manager.matches(item2, "int");
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void shouldResultNoPartMatchInName() {
+
+        boolean expected = false;
+        boolean actual = manager.matches(item1, "unta");
+
+        assertEquals(expected, actual);
+    }
 }

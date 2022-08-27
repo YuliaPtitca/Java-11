@@ -106,4 +106,5 @@ public class ProductRepositoryTest {
 
         assertArrayEquals(expected, actual);
     }
+
 }
